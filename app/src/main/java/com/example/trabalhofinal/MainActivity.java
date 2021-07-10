@@ -36,21 +36,21 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
                 Fragment search = SearchFragment.newInstance();
                 openFragment(search);
 
-                Toast.makeText(getApplicationContext(), "listar", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "listar", Toast.LENGTH_LONG).show();
                 break;
             }
             case R.id.home: {
                 getSupportActionBar().setTitle("Home");
                 Fragment home = HomeFragment.newInstance();
                 openFragment(home);
-                Toast.makeText(getApplicationContext(), "novo", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "novo", Toast.LENGTH_LONG).show();
                 break;
             }
             case R.id.cart: {
                 getSupportActionBar().setTitle("Carrinho");
                 Fragment cart = CartFragment.newInstance();
                 openFragment(cart);
-                Toast.makeText(getApplicationContext(), "novo", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "novo", Toast.LENGTH_LONG).show();
                 break;
             }
         }
