@@ -4,7 +4,7 @@ import android.provider.BaseColumns;
 
 public class DBSchema {
 
-    public static final class Finance implements BaseColumns {
+    public static final class Oferta implements BaseColumns {
         public static final String TABLENAME = "oferta";
         public static final String PRICE = "preco";
         public static final String NAME = "nome";
