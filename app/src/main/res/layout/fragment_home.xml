@@ -18,35 +18,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <Button
+        android:id="@+id/btnDesconto"
+        android:layout_width="156dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#FF7700"
+        android:text="Cupons de Desconto"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnProduct"
+        android:layout_width="246dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FF7700"
+        android:text="Produtos"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSupermercados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/btnSupermercados"
-        android:layout_width="255dp"
-        android:layout_height="148dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="286dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FF7700"
+        android:text="Supermercados Parceiros"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/btnProdutos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="144dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSupermercados"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/btnCupons"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="144dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSupermercados"
-        app:layout_constraintEnd_toStartOf="@+id/btnProdutos"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>

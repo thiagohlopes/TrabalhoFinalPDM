@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
         navigationView = (BottomNavigationView) findViewById(R.id.navigationView);
         navigationView.setOnNavigationItemSelectedListener(this);
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.container, new CartFragment());
+        ft.replace(R.id.container, new HomeFragment());
         ft.commit();
     }
 
