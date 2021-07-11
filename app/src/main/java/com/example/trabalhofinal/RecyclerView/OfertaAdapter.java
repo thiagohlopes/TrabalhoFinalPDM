@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.trabalhofinal.model.Oferta;
+import com.example.trabalhofinal.R;
+
 import java.util.ArrayList;
 
 public class OfertaAdapter extends RecyclerView.Adapter<OfertaViewHolder>
@@ -15,7 +18,8 @@ public class OfertaAdapter extends RecyclerView.Adapter<OfertaViewHolder>
     private ArrayList<Oferta> ofertas;
     private Activity activity;
 
-    public OfertaAdapter(ArrayList<Oferta> Ofertas, Activity activity) {
+    public OfertaAdapter(ArrayList<Oferta> Ofertas, Activity activity)
+    {
         this.ofertas = Ofertas;
         this.activity = activity;
     }
@@ -25,7 +29,7 @@ public class OfertaAdapter extends RecyclerView.Adapter<OfertaViewHolder>
     public OfertaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View itemView = inflater.inflate(R.layout.activity_view_holder_oferta, parent, false);
+        View itemView = inflater.inflate(R.layout.activity_view_holder, parent, false);
         OfertaViewHolder viewHolder = new OfertaViewHolder(itemView, activity);
         return viewHolder;
     }
